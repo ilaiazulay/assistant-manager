@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+footer,
+nav,
+aside,
+section,
+div {
+    display: block;
+}
+
+body    ::-webkit-scrollbar {
+        display: none; 
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+}
+
+body{
+    font-family: 'mulish', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 98px;
+    background-color: #f3f3f3;
+    position: relative;
+
+}
+
+#hamburger{
+    display: none;
+}
+
+#hamburger img{
+    display: none;
+}
+
+.header-elements {
+    display: inline-block;
+}
+
+header .logo {
+    background-image: url("../images/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100px;
+    width: 196px;
+    margin-left: 18px;
+}
+
+.search {
+    position: absolute;
+    top: 45px;
+    width: 200px;
+    height: 20px;
+    left: 233px;
+    background: rgba(238, 238, 238, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.allert {
+    margin-top: 43px;
+    float: right;
+    margin-right: 17px;
+    background: #FFFFFF;
+    mix-blend-mode: multiply;
+    border-style: none;
+}
+
+.chat {
+    position: relative;
+    margin-top: 40px;
+    float: right;
+    margin-right: 16px;
+    background: #FFFFFF;
+    mix-blend-mode: multiply;
+    border-style: none;
+}
+
+.coach {
+    margin-top: 38px;
+    float: right;
+    margin-right: 16px;
+    background: #FFFFFF;
+    mix-blend-mode: multiply;
+    border-style: none;
+}
+
+.arrow {
+    margin-top: 56px;
+    float: right;
+    margin-right: 72px;
+    background: #FFFFFF;
+    mix-blend-mode: multiply;
+    border-style: none;
+}
+
+#left-side {
+    position: absolute;
+    height: 100%;
+    width: 233px;
+    background-color: #f3f3f3;
+}
+
+.menu li {
+    height: 32px;
+    width: 225px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 8px;
+    list-style: none;
+
+    color: #000000;
+    background: (0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.menu img {
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu p {
+    position: absolute;
+    margin-left: 36px;
+    margin-top: 8px;
+}
+
+#record_training {
+    margin-top: 30px;
+}
+
+#settings {
+    margin-top: 30px;
+}
+
+#selected {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#symbol {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+#breadcrumps{
+    position: absolute;
+    left: 239px;
+    margin-top: 2px;
+}
+
+#breadcrumps a{
+    color:#000000;
+}
+
+#content {
+    position: absolute;
+    width: 1000px;
+    height: 560px;
+    margin-top: 50px;
+    left: 400px;
+    overflow: none;
+}
+
+#table_parameters img {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#table_parameters a {
+    position: relative;
+    top: 35px;
+    margin-left: 75px;
+    margin-top: 0px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    width: auto;
+}
+
+#name {
+    left: 30px;
+    margin-right: 30px;
+}
+
+.line {
+    width: 956px;
+    height: 0px;
+    border: 1px solid rgba(204, 204, 204, 0.6);
+}
+
+.squad section {
+    display: inline-flex;
+    margin-bottom: 0px;
+}
+
+.squad section img {
+    margin-right: 15px;
+}
+
+.squad section p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.nationality {
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 50px;
+    height: 35px;
+}
+
+.squad section a {
+    margin-left: 85px;
+    margin-top: 35px;
+    width: 40px;
+}
+
+.position {
+    padding-left: 30px;
+    margin-right: 119px;
+}
+
+.activities button {
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    backdrop-filter: blur(4px);
+    border-radius: 13px;
+    width: 34px;
+    height: 30px;
+    margin-right: 2px;
+    margin-top: 25px;
+}
+
+.activities button img {
+    margin-top: 2px;
+    margin-left: 3px;
+}
+
+.activities button:first-child {
+    margin-left: 70px;
+}
+
+.player {
+    width: 64px;
+    height: 75.68px;
+    border-radius: 14px;
+}
+
+.player_name {
+    width: 123px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+    width: 960px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 14px;
+}
+
+.stats_table {
+    position: absolute;
+    width: 960px;
+    height: 325px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 14px;
+    top: 170px;
+}
+
+.stats_table .attributes {
+    position: absolute;
+}
+
+.stats_table .attributes p {
+    margin-right: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    width: 140px;
+    text-align: left;
+}
+
+.attributes span {
+    font-weight: 100;
+}
+
+.delete_player {
+    width: 50px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+    float: right;
+    margin-top: 350px;
+    margin-right: 40px;
+}
+
+.delete_player:hover {
+    background-color: rgb(170, 67, 67);
+}
+
+.delete_player img {
+    margin-top: 3px;
+
+}
+
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 80%;
+    height: 375px;
+    margin-top: 20px;
+    left: 300px;
+}
+
+.boxes {
+    width: 26.5%;
+    height: 55%;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.3);
+    border-radius: 20px;
+    margin-top: 37px;
+    margin-left: 25px;
+    background-color: #bac0cc5a;
+}
+
+.picBox {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+.hBox {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 56px;
+    color: #000000;
+    text-align: center;
+}
+
+input {
+    width: 900px;
+    height: 25px;
+}
+
+.field {
+    margin-top: 20px;
+}
+
+#position { 
+    width: 27%;
+    height :30px; 
+}
+
+#datePosition { 
+    width: 26.5%;
+    height :30px;
+}
+
+#num { 
+    width: 26.5%;
+    height :25px;
+}
+
+.button {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(183, 187, 192);
+    padding: 15px 40px;
+    border-radius: 4px;
+    font-weight: normal;
+    text-align: center;
+    
+    margin-left: 700px;
+  }
+
+  .glow-button:hover {
+    color: rgb(0, 0, 0);
+    
+  }
+
+  .add {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background: rgb(183, 187, 192);
+    border-radius: 4px;
+    font-weight: normal;
+    text-align: center;
+    height: 36px;
+    width: 150px;
+    border: none;
+    margin-left: 755px;
+    font-size: 17px;
+  }
+
+  .add-button:hover {
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+@media (max-width: 700px) {
+    .header-elements {
+        display: inline-block;
+    }
+
+    header .logo {
+        background-image: url("../images/logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 120px;
+        width: 196px;
+        margin-left: 175px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .allert {
+        display: none;
+    }
+
+    .chat {
+        display: none;
+    }
+
+    .coach {
+        margin-top: 38px;
+        float: right;
+        margin-right: 2px;
+        background: #FFFFFF;
+        mix-blend-mode: multiply;
+        border-style: none;
+    }
+
+    .arrow {
+        margin-top: 56px;
+        float: right;
+        margin-right: 5px;
+        background: #FFFFFF;
+        mix-blend-mode: multiply;
+        border-style: none;
+    }
+
+    #left-side {
+        display: none;
+        z-index: 2;
+        width: 100%;
+    }
+
+    .menu p{
+        font-size:xx-large;
+    }
+
+    .menu li{
+        margin-bottom: 30px;
+        width: 95%;
+        height:40px;
+    }
+
+    #settings{
+        margin-top: 100px
+    }
+
+    #symbol{
+        position: absolute;
+        top: 650px;
+        width: 100px;
+        height:100px
+    }
+
+    #breadcrumps {
+        display: none;
+    }
+
+    #content {
+        width: 406px;
+        height: 650px;
+        top: 75px;
+        left: 40px;
+    }
+
+    #table_parameters img {
+        display: none;
+    }
+
+    #table_parameters a {
+        position: relative;
+        top: 35px;
+        margin-left: 57px;
+        margin-top: 0px;
+        font-weight: bold;
+        margin-bottom: 50px;
+        width: auto;
+    }
+
+    .squad section p {
+        width: 45px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+
+    .nationality {
+        margin-left: 85px;
+        margin-top: 30px;
+        width: 50px;
+        height: 35px;
+    }
+
+    .squad section a {
+        margin-left: 62px;
+        margin-top: 35px;
+        width: 40px;
+    }
+
+    .position {
+        padding-left: 30px;
+        margin-right: 119px;
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .headline {
+        width: 100%;
+        height: 90px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 14px;
+    }
+
+    .stats_table {
+        width: 406px;
+        height: 100;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        box-sizing: border-box;
+        border-radius: 14px;
+        overflow: auto;
+    }
+
+    .stats_table .attributes {
+        position: absolute;
+        display: block;
+    }
+
+    .stats_table .attributes p {
+        margin-right: 0px;
+        margin-left: 10px;
+        font-weight: bold;
+        width: 140px;
+        text-align: left;
+        margin-bottom: 60px;
+    }
+
+    .delete_player {
+        position: absolute;
+        width: 100px;
+        height: 30px;
+        border: 1px solid rgba(0, 0, 0, 0.6);
+        box-sizing: border-box;
+        border-radius: 13px;
+        background-color: #FFFFFF;
+        bottom: 20px;
+        right:110px;
+        
+    }
+
+    .delete_player img {
+        margin-top: 3px;
+
+    }
+
+    #table_parameters a:nth-child(5) {
+        display: none;
+    }
+
+    #table_parameters a:nth-child(6) {
+        display: none;
+    }
+
+    #table_parameters a:nth-child(7) {
+        display: none;
+    }
+
+    .tasks {
+        display: none;
+    }
+
+    .position {
+        display: none;
+    }
+
+    .activities img {
+        display: none;
+    }
+
+    .activities button {
+        display: none;
+    }
+
+    .headline .activities img {
+        display: block;
+        margin-left: 35px;
+    }
+
+    .headline .activities button {
+        display: initial;
+        position:absolute;
+        bottom: 112px;
+        left:45px;
+        width: 100px;
+    }
+
+    .headline .activities button:first-child {
+        margin-left:105px;
+    }
+
+    .headline .activities button:nth-child(2) {
+        left:255px;
+    }
+
+    .line {
+        width: 400px;
+    }
+
+    .squad {
+        overflow: auto;
+    }
+
+    #section2 {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        width: 100%;
+        height: 700px;
+        margin-top: 20px;
+        left: 10px;
+    }
+    
+    .boxes:first-child {
+       display: none;
+    }
+    
+    .boxes:nth-child(2) {
+        display: none;
+     }
+     
+     .boxes:nth-child(3) {
+        display: none;
+     }
+
+     .boxes {
+        width: 50%;
+        height: 30%;
+        box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.3);
+        border-radius: 20px;
+        margin-top: 37px;
+        margin-left: 100px;
+        background-color: #bac0cc5a;
+    }
+    
+    .picBox {
+        width: 60%;
+        height: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+    
+    }
+    
+    .hBox {
+        margin-top: 10px;
+        font-weight: 700;
+        font-size: 5vw;
+        line-height: 56px;
+        color: #000000;
+        text-align: center;
+    }
+
+    input {
+        width: 375px;
+        height: 25px;
+        margin-left: 1px;
+    }
+    
+    .field {
+        margin-top: 13px;
+    }
+    
+    #position { 
+        width: 28%;
+        height :27px;
+        margin-left: 1px;
+    }
+    
+    #datePosition { 
+        width: 26.5%;
+        height :28px;
+    }
+    
+    #num { 
+        width: 26.5%;
+        height :23px;
+        margin-bottom: 75px;
+    }
+    
+    .button {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        background: rgb(183, 187, 192);
+        padding: 15px 40px;
+        border-radius: 4px;
+        font-weight: normal;
+        text-align: center;
+        margin-left: 120px;
+      }
+    
+      .glow-button:hover {
+        color: rgb(0, 0, 0);
+        
+      }
+
+      #hamburger{
+          display:block;
+          position: absolute;
+          width: 50px;
+          height:50px;
+          top: 32px;
+          left: 5px;
+          border-style: none;
+          background: none;
+          cursor:pointer;
+      }
+
+      #hamburger img{
+          display: block;
+          width: 50px;
+          height:50px;
+      }
+
+      #selected{
+        background: none;
+        font-weight: bold;
+      }
+
+
+    /* .headline .activities{
+    } */
+
+}
